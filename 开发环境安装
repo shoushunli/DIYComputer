@@ -1,0 +1,10 @@
+开发环境安装
+
+Github: https://github.com/shoushunli/DIYComputer
+
+大家可以在电脑上装一个XAMPP，我用的版本是5.6.40-1。
+Mysql数据库管理软件用的Navicat，最新版。
+IDE我用的phpstorm，最新版。
+
+这三个软件按顺序安装好，安装路径不要有中文，一路都按照默认安装即可。如果电脑里有mysql的话最好先卸载再安装XAMPP，不然可能会有冲突。安装好之后把
+git的代码配置到/Applications/XAMPP/xamppfiles/htdocs这个路径下就可以了。如果配置不好我找个时间跟大家视频演示一下。
