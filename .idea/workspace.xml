@@ -10,10 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="上传开发环境安装文档">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Cpu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/chooseInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/chooseInsert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/cpuInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
+    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="Insert CPU">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <updated>1603708042464</updated>
       <workItem from="1603708043518" duration="1624000" />
       <workItem from="1604305505567" duration="2000" />
-      <workItem from="1604343621089" duration="12703000" />
+      <workItem from="1604343621089" duration="14295000" />
     </task>
     <task id="LOCAL-00001" summary="Server Setup">
       <created>1603708314179</created>
@@ -85,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604364200456</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Insert CPU">
+      <created>1604365033558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604365033558</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +112,8 @@
     <MESSAGE value="Server Setup" />
     <MESSAGE value="上传开发环境安装文档" />
     <MESSAGE value="insert CPU" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert CPU" />
+    <MESSAGE value="Insert CPU" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insert CPU" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1108" y="170" key="#PHP" timestamp="1604349926255">
@@ -130,11 +136,12 @@
       <screen x="0" y="23" width="1920" height="995" />
     </state>
     <state x="791" y="153" key="SettingsEditor/0.23.1920.995@0.23.1920.995" timestamp="1603708110003" />
-    <state x="609" y="274" key="Vcs.Push.Dialog.v2" timestamp="1604364212024">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="609" y="276" key="Vcs.Push.Dialog.v2" timestamp="1604365038930">
+      <screen x="0" y="23" width="1920" height="996" />
     </state>
     <state x="609" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604364212024" />
     <state x="609" y="275" key="Vcs.Push.Dialog.v2/0.23.1920.995@0.23.1920.995" timestamp="1603708384981" />
+    <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.996@0.23.1920.996" timestamp="1604365038930" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1603712647181" />
     <state x="1105" y="242" width="670" height="676" key="search.everywhere.popup" timestamp="1604351027487">
       <screen x="0" y="23" width="1920" height="996" />
