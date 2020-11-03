@@ -13,7 +13,7 @@
     <div>
         <h1>Select the type of hardware you want to add</h1>
     </div>
-    <div><a href="cpu/index/">CPU</a></div>
+    <div><a href="insert/cpuInsert/">CPU</a></div>
 </div>
 </body>
 </html>

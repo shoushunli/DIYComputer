@@ -11,16 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="上传开发环境安装文档">
-      <change afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/Cpu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/CpuModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/chooseInsert.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/User_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Cpu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/chooseInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/chooseInsert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/cpuInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +55,7 @@
       <updated>1603708042464</updated>
       <workItem from="1603708043518" duration="1624000" />
       <workItem from="1604305505567" duration="2000" />
-      <workItem from="1604343621089" duration="11924000" />
+      <workItem from="1604343621089" duration="12703000" />
     </task>
     <task id="LOCAL-00001" summary="Server Setup">
       <created>1603708314179</created>
@@ -85,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603712639587</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="insert CPU">
+      <created>1604364200456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604364200456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +106,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Server Setup" />
     <MESSAGE value="上传开发环境安装文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传开发环境安装文档" />
+    <MESSAGE value="insert CPU" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert CPU" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1108" y="170" key="#PHP" timestamp="1604349926255">
@@ -117,10 +118,10 @@
       <screen x="0" y="23" width="1920" height="997" />
     </state>
     <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.997@0.23.1920.997" timestamp="1603712538574" />
-    <state x="1037" y="167" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604351459466">
+    <state x="658" y="71" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604364661915">
       <screen x="0" y="23" width="1920" height="996" />
     </state>
-    <state x="1037" y="167" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.996@0.23.1920.996" timestamp="1604351459466" />
+    <state x="658" y="71" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.996@0.23.1920.996" timestamp="1604364661915" />
     <state x="1174" y="469" key="NewPhpFileDialog" timestamp="1604343707287">
       <screen x="0" y="23" width="1920" height="995" />
     </state>
@@ -129,9 +130,10 @@
       <screen x="0" y="23" width="1920" height="995" />
     </state>
     <state x="791" y="153" key="SettingsEditor/0.23.1920.995@0.23.1920.995" timestamp="1603708110003" />
-    <state x="609" y="276" key="Vcs.Push.Dialog.v2" timestamp="1603712647181">
-      <screen x="0" y="23" width="1920" height="997" />
+    <state x="609" y="274" key="Vcs.Push.Dialog.v2" timestamp="1604364212024">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="609" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604364212024" />
     <state x="609" y="275" key="Vcs.Push.Dialog.v2/0.23.1920.995@0.23.1920.995" timestamp="1603708384981" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1603712647181" />
     <state x="1105" y="242" width="670" height="676" key="search.everywhere.popup" timestamp="1604351027487">

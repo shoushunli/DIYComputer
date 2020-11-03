@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cpu extends CI_Controller {
+class Insert extends CI_Controller {
 
-    public function index()
+    public function cpuInsert()
     {
         $this->load->view('cpuInsert');
     }
 
-    public function insert(){
+    public function doCpuInsert(){
         $brand = $this->input->post('brand');
         $sku = $this->input->post('sku');
         $price = $this->input->post('price');

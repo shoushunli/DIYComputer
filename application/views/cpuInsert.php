@@ -14,7 +14,7 @@
         <h1>Input your new record<h1/>
     </div>
     <br/>
-    <form action="cpu/insert" method="post">
+    <form action="insert/doCpuInsert" method="post">
         <div>Hardware Type: CPU</div><br/>
         <div>Brand</div>
         <select name="brand">
