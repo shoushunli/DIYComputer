@@ -5,20 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select the hardware to add</title>
     <base href="<?php echo site_url();?>">
-    <title>Document</title>
 </head>
 <body>
-    <form method="post" action="user/check_login">
-        <p>
-            用户名：<input type="text" name="username">
-        </p>
-        <p>
-            密码：<input type="password" name="password">
-        </p>
-        <p>
-            <input type="submit" value="登陆">
-        </p>
-    </form>
+<div>
+    <div>
+        <h1>Welcome to White Papers PT1 Admin Demo</h1>
+    </div>
+    <div><a href="admin/hardwareInsert/">Add new record</a></div>
+    <div><a href="">Search, update or delete record</a></div>
+</div>
 </body>
 </html>

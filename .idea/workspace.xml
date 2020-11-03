@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="上传开发环境安装文档">
+      <change afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Cpu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/CpuModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/chooseInsert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/User_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/login.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1jPaBFyWX9LsqDNP7Hgi5DUFomu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="" />
+      <created>1603708042464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603708042464</updated>
+      <workItem from="1603708043518" duration="1624000" />
+      <workItem from="1604305505567" duration="2000" />
+      <workItem from="1604343621089" duration="11924000" />
+    </task>
+    <task id="LOCAL-00001" summary="Server Setup">
+      <created>1603708314179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603708314179</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Server Setup">
+      <created>1603708338179</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603708338179</updated>
+    </task>
+    <task id="LOCAL-00003" summary="上传开发环境安装文档">
+      <created>1603712639587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603712639587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Server Setup" />
+    <MESSAGE value="上传开发环境安装文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传开发环境安装文档" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1108" y="170" key="#PHP" timestamp="1604349926255">
+      <screen x="0" y="23" width="1920" height="996" />
+    </state>
+    <state x="1108" y="170" key="#PHP/0.23.1920.996@0.23.1920.996" timestamp="1604349926255" />
+    <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603712538574">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.997@0.23.1920.997" timestamp="1603712538574" />
+    <state x="1037" y="167" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604351459466">
+      <screen x="0" y="23" width="1920" height="996" />
+    </state>
+    <state x="1037" y="167" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.996@0.23.1920.996" timestamp="1604351459466" />
+    <state x="1174" y="469" key="NewPhpFileDialog" timestamp="1604343707287">
+      <screen x="0" y="23" width="1920" height="995" />
+    </state>
+    <state x="1174" y="469" key="NewPhpFileDialog/0.23.1920.995@0.23.1920.995" timestamp="1604343707287" />
+    <state x="791" y="153" key="SettingsEditor" timestamp="1603708110003">
+      <screen x="0" y="23" width="1920" height="995" />
+    </state>
+    <state x="791" y="153" key="SettingsEditor/0.23.1920.995@0.23.1920.995" timestamp="1603708110003" />
+    <state x="609" y="276" key="Vcs.Push.Dialog.v2" timestamp="1603712647181">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state x="609" y="275" key="Vcs.Push.Dialog.v2/0.23.1920.995@0.23.1920.995" timestamp="1603708384981" />
+    <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1603712647181" />
+    <state x="1105" y="242" width="670" height="676" key="search.everywhere.popup" timestamp="1604351027487">
+      <screen x="0" y="23" width="1920" height="996" />
+    </state>
+    <state x="1105" y="242" width="670" height="676" key="search.everywhere.popup/0.23.1920.996@0.23.1920.996" timestamp="1604351027487" />
+  </component>
+</project>
