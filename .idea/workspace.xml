@@ -10,22 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="front end of Search, by wenhao">
-      <change afterPath="$PROJECT_DIR$/application/models/Cpu_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/hardwareMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/mainMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="combine, fail">
+      <change afterPath="$PROJECT_DIR$/css/search.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Cpu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Cpu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/chooseInsert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Cpu_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Cpu_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/cpuInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/cpu_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpu_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/cpu_search.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/search_window.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hardwareMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mainMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,7 @@
       <workItem from="1603708043518" duration="1624000" />
       <workItem from="1604305505567" duration="2000" />
       <workItem from="1604343621089" duration="15158000" />
-      <workItem from="1604562259166" duration="15289000" />
+      <workItem from="1604562259166" duration="25966000" />
     </task>
     <task id="LOCAL-00001" summary="Server Setup">
       <created>1603708314179</created>
@@ -120,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604372293692</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="combine, fail">
+      <created>1604587870993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604587870993</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +147,8 @@
     <MESSAGE value="insert CPU" />
     <MESSAGE value="Insert CPU" />
     <MESSAGE value="front end of Search, by wenhao" />
-    <option name="LAST_COMMIT_MESSAGE" value="front end of Search, by wenhao" />
+    <MESSAGE value="combine, fail" />
+    <option name="LAST_COMMIT_MESSAGE" value="combine, fail" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1108" y="170" key="#PHP" timestamp="1604349926255">
@@ -167,11 +171,12 @@
       <screen x="0" y="23" width="1920" height="995" />
     </state>
     <state x="791" y="153" key="SettingsEditor/0.23.1920.995@0.23.1920.995" timestamp="1603708110003" />
-    <state x="609" y="278" key="Vcs.Push.Dialog.v2" timestamp="1604372296949">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="609" y="279" key="Vcs.Push.Dialog.v2" timestamp="1604587879555">
+      <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="609" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604364212024" />
     <state x="609" y="278" key="Vcs.Push.Dialog.v2/0.23.1920.1002@0.23.1920.1002" timestamp="1604372296949" />
+    <state x="609" y="279" key="Vcs.Push.Dialog.v2/0.23.1920.1004@0.23.1920.1004" timestamp="1604587879555" />
     <state x="609" y="275" key="Vcs.Push.Dialog.v2/0.23.1920.995@0.23.1920.995" timestamp="1603708384981" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.996@0.23.1920.996" timestamp="1604365038930" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1603712647181" />

@@ -44,8 +44,8 @@
         <form action="insert/doCpuInsert" method="post">
             <div>Brand</div>
             <select name="brand">
-                <option value="intel" selected>Intel</option>
-                <option value="amd">AMD</option>
+                <option value="Intel" selected>Intel</option>
+                <option value="AMD">AMD</option>
             </select>
             <div>SKU</div>
             <input type="text" name="sku">
@@ -66,9 +66,8 @@
             <div>Socket</div>
             <input type="text" name="socket"><br/><br/>
             <input type="submit" value="Submit"><br/>
-        </form><br/>
-        <a href="admin/hardwareInsert/">Choose another hardware type</a><br/>
-        <a href="admin/index">Back to menu</a>
+        </form>
+
     </div>
 
 </div>

@@ -12,7 +12,7 @@ class Cpu_model extends CI_Model {
         $query = $this->db->query(
           "SELECT *
            FROM CPU NATURAL JOIN Hardware
-           where brandName = '$brand' AND sku LIKE '%$PGPL%'AND sku Like '%$CPL%' AND sku LIKE '%$CG%'
+           where brandName = '$brand'
           "
         );
 

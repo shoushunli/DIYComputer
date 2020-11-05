@@ -1,0 +1,185 @@
+::selection { background-color: grey; color: white; }
+::-moz-selection { background-color: #E13300; color: white; }
+
+
+a {
+    color: #003399;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+#body {
+    margin: 0 15px 0 15px;
+}
+#container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: 0 0 8px #D0D0D0;
+}
+/* dropdown*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    float: left;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF5733;
+    float: left;
+}
+
+.button3:hover {
+    background-color: #FF5733;
+    color: white;
+}
+
+
+table {
+    width:100%;
+    position: relative;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+#t01 th {
+    background-color: #333;
+    color: white;
+}
+
+.buttonDelete {
+    border: 0px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.buttonUpdate {
+    border: 0px;
+    color: green;
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.buttonDelete:hover {
+    background-color: #FF5733;
+}
+
+.buttonUpdate:hover {
+    background-color: #4CAF50;
+}
+
