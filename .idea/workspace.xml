@@ -10,8 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="Insert CPU">
+    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="front end of Search, by wenhao">
+      <change afterPath="$PROJECT_DIR$/application/models/Cpu_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/hardwareMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/mainMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Cpu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Cpu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/chooseInsert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/cpuInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/cpu_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpu_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +48,21 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/models" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/models" />
+      <recent name="$PROJECT_DIR$/application/views" />
+      <recent name="$PROJECT_DIR$/application/controllers" />
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/views" />
+      <recent name="$PROJECT_DIR$/application/controllers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -53,7 +75,8 @@
       <updated>1603708042464</updated>
       <workItem from="1603708043518" duration="1624000" />
       <workItem from="1604305505567" duration="2000" />
-      <workItem from="1604343621089" duration="14295000" />
+      <workItem from="1604343621089" duration="15158000" />
+      <workItem from="1604562259166" duration="15289000" />
     </task>
     <task id="LOCAL-00001" summary="Server Setup">
       <created>1603708314179</created>
@@ -90,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604365033558</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="front end of Search, by wenhao">
+      <created>1604372293692</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604372293692</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,17 +143,18 @@
     <MESSAGE value="上传开发环境安装文档" />
     <MESSAGE value="insert CPU" />
     <MESSAGE value="Insert CPU" />
-    <option name="LAST_COMMIT_MESSAGE" value="Insert CPU" />
+    <MESSAGE value="front end of Search, by wenhao" />
+    <option name="LAST_COMMIT_MESSAGE" value="front end of Search, by wenhao" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1108" y="170" key="#PHP" timestamp="1604349926255">
       <screen x="0" y="23" width="1920" height="996" />
     </state>
     <state x="1108" y="170" key="#PHP/0.23.1920.996@0.23.1920.996" timestamp="1604349926255" />
-    <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603712538574">
+    <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604564079464">
       <screen x="0" y="23" width="1920" height="997" />
     </state>
-    <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.997@0.23.1920.997" timestamp="1603712538574" />
+    <state x="804" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.997@0.23.1920.997" timestamp="1604564079464" />
     <state x="658" y="71" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604364661915">
       <screen x="0" y="23" width="1920" height="996" />
     </state>
@@ -136,10 +167,11 @@
       <screen x="0" y="23" width="1920" height="995" />
     </state>
     <state x="791" y="153" key="SettingsEditor/0.23.1920.995@0.23.1920.995" timestamp="1603708110003" />
-    <state x="609" y="276" key="Vcs.Push.Dialog.v2" timestamp="1604365038930">
-      <screen x="0" y="23" width="1920" height="996" />
+    <state x="609" y="278" key="Vcs.Push.Dialog.v2" timestamp="1604372296949">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="609" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604364212024" />
+    <state x="609" y="278" key="Vcs.Push.Dialog.v2/0.23.1920.1002@0.23.1920.1002" timestamp="1604372296949" />
     <state x="609" y="275" key="Vcs.Push.Dialog.v2/0.23.1920.995@0.23.1920.995" timestamp="1603708384981" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.996@0.23.1920.996" timestamp="1604365038930" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1603712647181" />

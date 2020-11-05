@@ -3,11 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Insert extends CI_Controller {
 
-    public function cpuInsert()
-    {
-        $this->load->view('cpuInsert');
-    }
-
     public function doCpuInsert(){
         $brand = $this->input->post('brand');
         $sku = $this->input->post('sku');
@@ -21,11 +16,7 @@ class Insert extends CI_Controller {
         $coreGPU = $this->input->post('coreGPU');
         $this->load->model('cpuModel');
         $rows = $this->cpuModel->insertCpu($brand, $sku, $price, $cores, $threads, $tdp, $regularFreq, $boostFreq, $coreGPU, $socket);
-        if($rows == 2){
-            echo('success');
-        }
-        else{
-            echo('fail');
-        }
+
+        $this->load->view('cpuInsert', array('rows'=>$rows));
     }
 }

@@ -17,8 +17,8 @@
 <!--顶部菜单-->
 <div class="topnav">
     <ul>
-        <li><a href="admin/menu">Hardware Information</a></li>
-        <li><a class="active" href="admin/cpuInsert">Adding new record</a></li>
+        <li><a class="active" href="admin/menu">Hardware Information</a></li>
+        <li><a href="#news">Adding new record</a></li>
         <li><a href="#contact">My List</a></li>
         <li><a href="#about">Advanced Function</a></li>
     </ul>
@@ -28,7 +28,7 @@
     <!--    侧边菜单-->
     <div class="column side leftnav">
         <ul>
-            <li><a class="active" href="insert/cpuInsert">CPU</a></li>
+            <li><a href="insert/cpuInsert">CPU</a></li>
             <li><a href="#news">Motherboard</a></li>
             <li><a href="#contact">Memory</a></li>
             <li><a href="#about">GPU</a></li>
@@ -73,14 +73,13 @@
 
 </div>
 
-<script>
-    if(<?php echo $rows;?> == 2){
-        alert("添加成功！");
-    }
-    else{
-        alert("添加失败！");
-    }
-</script>
+
+
+
+
+
+
+
 
 </body>
 </html>
