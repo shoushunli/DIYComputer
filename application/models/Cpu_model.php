@@ -12,10 +12,9 @@ class Cpu_model extends CI_Model {
         $query = $this->db->query(
           "SELECT *
            FROM CPU NATURAL JOIN Hardware
-           where brandName = '$brand'
+           where brandName = '$brand' AND sku LIKE '%$PGPL%'AND sku Like '%$CPL%' AND sku LIKE '%$CG%'
           "
         );
-
         echo json_encode($query->result());
 
     }
@@ -30,13 +29,24 @@ class Cpu_model extends CI_Model {
     }
 
     public function cpu_update_db($sku, $att){
+
       foreach ($att as $key => $value) {
-          $this->db->query(
-          "UPDATE CPU,Hardware
-           SET $key = $value
-           where Hardware.sku = '$sku'
-          ");
+          if($key == 'brandName' || $key == 'price') {
+            $this->db->query(
+            "UPDATE Hardware
+             SET $key = $value
+             where Hardware.sku = '$sku'
+            ");
+          } else {
+            $this->db->query(
+            "UPDATE CPU
+             SET $key = $value
+             where CPU.sku = '$sku'
+            ");
+          }
+
       }
+
 
       $query = $this->db->query(
         "SELECT *

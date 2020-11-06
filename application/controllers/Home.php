@@ -1,16 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class admin extends CI_Controller {
+class Home extends CI_Controller {
 
-    public function menu()
+    public function index()
     {
         $this->load->view('menu');
     }
 
-    public function test()
+    public function cpuSearch()
     {
-        $this->load->view('test');
+        $this->load->view('cpu_search');
     }
 
     public function cpuInsert()

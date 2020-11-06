@@ -3,14 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cpu extends CI_Controller {
 
-	public function index()
+	public function cpuSearch()
 	{
 		$brand = $_GET['brand_Name'];
 		$PG 	 = $_GET['product_Gen'];
 		$PL		 = $_GET['product_Level'];
 		$CPL   = $_GET['cpu_PL'];
 		$CG	   = $_GET['core_g'];
-		if($PL != "") {
 			if($CPL == "Overclock" && $brand == "Intel") {
 					$CPL = 'K';
 			} elseif ($CPL == "Overclock" && $brand == "AMD") {
@@ -20,22 +19,24 @@ class Cpu extends CI_Controller {
 			} else {
 				$CPL = "";
 			}
-		}
-		if($CG != "") {
-			if($CG == true) {
-				if ($brand == "Intel") {
-					$CG = "";
+
+			if($CG != "") {
+				if($CG == true) {
+					if ($brand == "Intel") {
+						$CG = "";
+					} else {
+						$CG = "G";
+					}
 				} else {
-					$CG = "G";
-				}
-			} else {
-				if ($brand == "Intel") {
-					$CG = "F";
-				} else {
-					$CG = "";
+					if ($brand == "Intel") {
+						$CG = "F";
+					} else {
+						$CG = "";
+					}
 				}
 			}
-		}
+
+
 
 		$this->load->model('cpu_model');
 
@@ -53,12 +54,13 @@ class Cpu extends CI_Controller {
 	public function cpu_update() {
 			$skuUpdate = $_GET['skuUpdate'];
 			$attUpdate = $_GET['attUpdate'];
+			
 			$this->load->model('cpu_model');
 			// This result is the search of the newly updated data
 			// will use this data to overwrite the table we currently see in the frontend
 			$result = $this->cpu_model->cpu_update_db($skuUpdate, $attUpdate);
 
-			return $result;
+			//return $result;
 
 	}
 

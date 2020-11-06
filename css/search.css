@@ -153,6 +153,7 @@ th, td {
 
 .buttonDelete {
     border: 0px;
+    background-color: inherit;
     color: red;
     width: 100%;
     text-align: center;
@@ -167,6 +168,7 @@ th, td {
     border: 0px;
     color: green;
     width: 100%;
+    background-color: inherit;
     text-align: center;
     display: table-cell;
     font-size: 16px;
@@ -177,9 +179,10 @@ th, td {
 
 .buttonDelete:hover {
     background-color: #FF5733;
+    color:white;
 }
 
 .buttonUpdate:hover {
     background-color: #4CAF50;
+    color:white;
 }
-
