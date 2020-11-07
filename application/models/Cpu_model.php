@@ -30,7 +30,6 @@ class Cpu_model extends CI_Model {
 
     public function cpu_update_db($sku, $att){
       foreach ($att as $key => $value) {
-          $value = "'".$value."'";
           if($key == 'brandName' || $key == 'price') {
             $this->db->query(
             "UPDATE Hardware
@@ -38,6 +37,7 @@ class Cpu_model extends CI_Model {
              where Hardware.sku = '$sku'
             ");
           } else {
+            $value = "'".$value."'";
             $this->db->query(
             "UPDATE CPU
              SET $key = $value
