@@ -11,17 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="combine, fail">
-      <change afterPath="$PROJECT_DIR$/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Cpu_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Cpu_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/cpuInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/cpu_search.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/ComplexQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/complexQuery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/search_window.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hardwareMenu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mainMenu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +36,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -73,6 +65,7 @@
       <workItem from="1604305505567" duration="2000" />
       <workItem from="1604343621089" duration="15158000" />
       <workItem from="1604562259166" duration="25966000" />
+      <workItem from="1604739534931" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Server Setup">
       <created>1603708314179</created>
