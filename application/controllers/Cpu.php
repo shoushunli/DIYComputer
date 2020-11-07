@@ -16,12 +16,13 @@ class Cpu extends CI_Controller {
 					$CPL = 'X';
 			} elseif($CPL == "Low Power" && $brand == "Intel") {
 					$CPL = 'T';
+			}  elseif($CPL == "Regular" && $brand == "Intel") {
+				$CPL = "R";
 			} else {
-				$CPL = "";
+					$CPL = "";
 			}
-
 			if($CG != "") {
-				if($CG == true) {
+				if($CG === true) {
 					if ($brand == "Intel") {
 						$CG = "";
 					} else {
@@ -35,6 +36,7 @@ class Cpu extends CI_Controller {
 					}
 				}
 			}
+
 
 
 
@@ -54,7 +56,7 @@ class Cpu extends CI_Controller {
 	public function cpu_update() {
 			$skuUpdate = $_GET['skuUpdate'];
 			$attUpdate = $_GET['attUpdate'];
-			
+
 			$this->load->model('cpu_model');
 			// This result is the search of the newly updated data
 			// will use this data to overwrite the table we currently see in the frontend

@@ -53,10 +53,10 @@
               <button class="button button1" onclick = "setPL(this,'i5')" id = "i5Button" name = "pl">i5</button>
               <button class="button button1" onclick = "setPL(this,'i7')" id = "i7Button" name = "pl">i7</button>
               <button class="button button1" onclick = "setPL(this,'i9')" id = "i9Button" name = "pl">i9</button>
-              <button class="button button1" onclick = "setPL(this,'R3')" id = "r3Button" name = "pl">R3</button>
-              <button class="button button1" onclick = "setPL(this,'R5')" id = "r5Button" name = "pl">R5</button>
-              <button class="button button1" onclick = "setPL(this,'R7')" id = "r7Button" name = "pl">R7</button>
-              <button class="button button1" onclick = "setPL(this,'R9')" id = "r9Button" name = "pl">R9</button>
+              <button class="button button1" onclick = "setPL(this,'Ryzen3')" id = "r3Button" name = "pl">R3</button>
+              <button class="button button1" onclick = "setPL(this,'Ryzen5')" id = "r5Button" name = "pl">R5</button>
+              <button class="button button1" onclick = "setPL(this,'Ryzen7')" id = "r7Button" name = "pl">R7</button>
+              <button class="button button1" onclick = "setPL(this,'Ryzen9')" id = "r9Button" name = "pl">R9</button>
           </div>
       </div>
 
@@ -107,6 +107,7 @@
           <th style="background-color: #666; color:#f3f3f3">Delete</th>
       </tr>
   </table>
+
 
   <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -367,6 +368,7 @@
           // when action perfored regarless of confim or cancel updated the data change the sub/canc button back to Up
           row.cells[header.indexOf("Update")].innerHTML = '<button class="buttonUpdate" style = "height: 50px;" onclick="recordUpdate(this.parentNode.parentNode, this.parentNode.parentNode.rowIndex)">update</button>';
       }
+
 
   </script>
 

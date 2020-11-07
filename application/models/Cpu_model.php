@@ -7,14 +7,22 @@ class Cpu_model extends CI_Model {
 //        return $this->db->get_where(
 //            't_user', array('user_name'=>$uname, 'password'=>$pwd)
 //        )->row();
+        if($CPL == "R") {
+          $query = $this->db->query(
+            "SELECT *
+             FROM CPU NATURAL JOIN Hardware
+             where brandName = '$brand' AND sku LIKE '%$PGPL%'AND sku NOT Like '%T%' AND sku LIKE '%$CG%'
+            "
+          );
+        } else {
+          $query = $this->db->query(
+            "SELECT *
+             FROM CPU NATURAL JOIN Hardware
+             where brandName = '$brand' AND sku LIKE '%$PGPL%'AND sku Like '%$CPL%' AND sku LIKE '%$CG%'
+            "
+          );
+        }
 
-
-        $query = $this->db->query(
-          "SELECT *
-           FROM CPU NATURAL JOIN Hardware
-           where brandName = '$brand' AND sku LIKE '%$PGPL%'AND sku Like '%$CPL%' AND sku LIKE '%$CG%'
-          "
-        );
         echo json_encode($query->result());
 
     }
