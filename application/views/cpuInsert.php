@@ -31,17 +31,17 @@
       <div>SKU</div>
       <input type="text" name="sku">
       <div>Price</div>
-      <input type="number" name="price">
+      <input type="text" name="price">
       <div>Number of Cores</div>
       <input type="number" name="cores">
       <div>Number of Threads</div>
       <input type="number" name="threads">
       <div>TDP</div>
-      <input type="number" name="tdp">
+      <input type="text" name="tdp">
       <div>Regular Frequency</div>
-      <input type="number" name="regularFreq">
+      <input type="text" name="regularFreq">
       <div>Boost Frequency</div>
-      <input type="number" name="boostFreq">
+      <input type="text" name="boostFreq">
       <div>Core GPU</div>
       <input type="text" name="coreGPU">
       <div>Socket</div>
@@ -53,7 +53,7 @@
 
 
   <script>
-    if ( < ? php echo $rows; ? > == 2) {
+    if ( <?php echo $rows; ?> == 2) {
       alert("添加成功！");
     } else {
       alert("添加失败！");

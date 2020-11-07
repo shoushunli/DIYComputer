@@ -16,7 +16,6 @@ class Insert extends CI_Controller {
         $coreGPU = $this->input->post('coreGPU');
         $this->load->model('cpuModel');
         $rows = $this->cpuModel->insertCpu($brand, $sku, $price, $cores, $threads, $tdp, $regularFreq, $boostFreq, $coreGPU, $socket);
-
         $this->load->view('cpuInsert', array('rows'=>$rows));
     }
 }
