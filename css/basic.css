@@ -1,0 +1,126 @@
+
+body {
+  background-color: #fff;
+  margin: 40px;
+  font: 13px/20px normal Helvetica, Arial, sans-serif;
+  color: #4F5155;
+}
+
+/* dropdown*/
+.navbar {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.navbar a {
+  float: left;
+  width: 200px;
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: #666;
+  outline: none;
+  padding: 15px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dropdown-content {
+  overflow: scroll;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 300px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+
+
+table {
+    width:100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+#t01 th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+/* The search field */
+Input {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 14px 20px 12px 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+Input:focus {outline: 3px solid #ddd;}

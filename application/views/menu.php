@@ -50,8 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<a href="#">Power Supply</a>
 			</div>
 		</div>
-        <a href="complexQuery/index">Complex Query</a>
-		<a href="#contact">My List</a>
+    <a href="complexQuery/index">Complex Query</a>
+		<a href="home/basicFunc">My List</a>
 		<a href="#about">Advanced Function</a>
 
 	</div>

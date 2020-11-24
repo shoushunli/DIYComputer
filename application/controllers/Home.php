@@ -17,4 +17,9 @@ class Home extends CI_Controller {
     {
         $this->load->view('cpuInsert');
     }
+
+    public function basicFunc()
+    {
+        $this->load->view('basicFunc');
+    }
 }
