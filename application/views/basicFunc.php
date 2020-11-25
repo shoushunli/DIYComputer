@@ -155,19 +155,12 @@
                 skuSpan.textContent = item.sku;
                 skuSpan.style = "color:yellow";
                 cell.appendChild(skuSpan);
-
-
+                console.log("Tag added sucessfully")
                 // search for the price of corresonding sku from db and update the price cell
                 priceSearch(cate, item.sku);
-
-
               };
-
               // we append the link into the dropdown-content
-
               div.appendChild(t);
-
-
             });
             // alert if the request of skus failed.
           } else {
@@ -182,6 +175,7 @@
       document.getElementById(dropId).classList.toggle("show");
     }
 
+    // For further implementation usage.
     function inputReset(inputId) {
       input = document.getElementById(inputId);
       console.log(inputId);
@@ -196,10 +190,11 @@
         },
         success: function(data) {
           // returns the price of the product with the sku privided.
+          console.log("price retrieved successfully")
           tData = document.getElementsByTagName('td');
           tData[Object.keys(header).indexOf(cate)].innerHTML = data;
           price = 0;
-          for (var i = 0; i < header.length - 1; i++) {
+          for (var i = 0; i < Object.keys(header).length - 1; i++) {
             price += parseFloat(tData[i].innerHTML);
           }
           tData[Object.keys(header).indexOf("price")].innerHTML = price;
