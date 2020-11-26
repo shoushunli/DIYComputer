@@ -18,15 +18,14 @@
     <a href="Home/"> <i class="fa fa-home"></i> Home</a>
 
 
-    <div class="dropdown">
-      <button onclick="myFunction('CPU', 'cpuDrop')" class="dropbtn">CPU <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown" onmouseover = "myFunction('CPU', 'cpuDrop')" onmouseout="hideDropDown('cpuDrop')">
+      <button class="dropbtn">CPU <i class="fa fa-caret-down"></i></button>
       <div id="cpuDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="cpuInput" onkeyup="filterFunction('cpuInput', 'cpuDrop')">
-
       </div>
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown" onmouseover = "myFunction('Motherboard', 'mbDrop')" onmouseout="hideDropDown('mbDrop')">
       <button onclick="myFunction('Motherboard', 'mbDrop')" class="dropbtn">Motherboard <i class="fa fa-caret-down"></i></button>
       <div id="mbDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="mbInput" onkeyup="filterFunction('mbInput', 'mbDrop')">
@@ -34,7 +33,7 @@
       </div>
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown" onmouseover = "myFunction('Memory', 'mmDrop')" onmouseout="hideDropDown('mmDrop')">
       <button onclick="myFunction('Memory', 'mmDrop')" class="dropbtn">Memory <i class="fa fa-caret-down"></i></button>
       <div id="mmDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="mmInput" onkeyup="filterFunction('mmInput','mmDrop')">
@@ -42,7 +41,7 @@
       </div>
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown" onmouseover = "myFunction('GPU', 'gpuDrop')" onmouseout="hideDropDown('gpuDrop')">
       <button onclick="myFunction('GPU', 'gpuDrop')" class="dropbtn">GPU <i class="fa fa-caret-down"></i></button>
       <div id="gpuDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="gpuInput" onkeyup="filterFunction('gpuInput','gpuDrop')">
@@ -50,7 +49,7 @@
       </div>
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown" onmouseover = "myFunction('SSD', 'ssdDrop')" onmouseout="hideDropDown('ssdDrop')">
       <button onclick="myFunction('SSD', 'ssdDrop')" class="dropbtn">SSD <i class="fa fa-caret-down"></i></button>
       <div id="ssdDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="ssdInput" onkeyup="filterFunction('ssdInput', 'ssdDrop')">
@@ -58,7 +57,7 @@
       </div>
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown" onmouseover = "myFunction('HDD', 'hddDrop')" onmouseout="hideDropDown('hddDrop')">
       <button onclick="myFunction('HDD', 'hddDrop')" class="dropbtn">HDD <i class="fa fa-caret-down"></i></button>
       <div id="hddDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="hddInput" onkeyup="filterFunction('hddInput', 'hddDrop')">
@@ -66,16 +65,16 @@
       </div>
     </div>
 
-    <div class="dropdown">
-      <button onclick="myFunction('Case', 'caseDrop')" class="dropbtn">Case <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown" onmouseover = "myFunction('PCCase', 'caseDrop')" onmouseout="hideDropDown('caseDrop')">
+      <button onclick="myFunction('PCCase', 'caseDrop')" class="dropbtn">PCCase <i class="fa fa-caret-down"></i></button>
       <div id="caseDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="caseInput" onkeyup="filterFunction('caseInput', 'caseDrop')">
 
       </div>
     </div>
 
-    <div class="dropdown">
-      <button onclick="myFunction('Power Supply', 'powDrop')" class="dropbtn">Power Supply <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown" onmouseover = "myFunction('PowerSupply', 'powDrop')" onmouseout="hideDropDown('powDrop')">
+      <button onclick="myFunction('PowerSupply', 'powDrop')" class="dropbtn">Power Supply <i class="fa fa-caret-down"></i></button>
       <div id="powDrop" class="dropdown-content">
         <input type="text" placeholder="Search.." id="powInput" onkeyup="filterFunction('powInput', 'powDrop')">
 
@@ -93,8 +92,8 @@
       <th>GPU</th>
       <th>SSD</th>
       <th>HDD</th>
-      <th>Case</th>
-      <th>Power Supply</th>
+      <th>PCCase</th>
+      <th>PowerSupply</th>
       <th style="background:orange">Total Price</th>
     </tr>
     <tr>
@@ -117,8 +116,12 @@
 
   <script>
     var header = {"CPU":false, "Motherboard":false, "Memory":false, "GPU":false,
-     "SSD":false, "HDD":false, "Case":false, "Power Supply":false, "price":false};
+     "SSD":false, "HDD":false, "PCCase":false, "PowerSupply":false, "price":false};
     var price = 0;
+
+    function hideDropDown(dropId) {
+      document.getElementById(dropId).classList.remove("show");
+    }
     //@param cate: the category this button belongs to
     //@param dropId: the Id of the dropdown-connent
     // TODO:
@@ -172,7 +175,7 @@
     }
 
       // show the dropdown content
-      document.getElementById(dropId).classList.toggle("show");
+      document.getElementById(dropId).classList.add("show");
     }
 
     // For further implementation usage.
