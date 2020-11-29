@@ -180,17 +180,18 @@
         $.ajax({
           // url to receive the preferences user selected
           // replace the url below
-          url: "advFuncCon/xxx",
+          url: "http://localhost:8080/DIYComputer/computerServlet",
           data: {
 
-              price:budget,
+              maximum:budget,
               cpu:cates['cpu'][1],
               gpu:cates['gpu'][1],
               memory:cates['memory'][1],
               power:cates['power'][1],
               pccAndMotherboard:cates['pccAndMotherboard'][1],
               ssd:cates['ssd'][1],
-              hdd:cates['hdd'][1]
+              hdd:cates['hdd'][1],
+              action:"list"
           },
           datatype: 'json',
           success: function(data) {
