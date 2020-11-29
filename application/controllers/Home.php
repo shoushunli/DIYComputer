@@ -22,4 +22,9 @@ class Home extends CI_Controller {
     {
         $this->load->view('basicFunc');
     }
+
+    public function advFunc()
+    {
+        $this->load->view('advFunc');
+    }
 }

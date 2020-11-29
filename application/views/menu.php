@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
     <a href="complexQuery/index">Complex Query</a>
 		<a href="home/basicFunc">My List</a>
-		<a href="#about">Advanced Function</a>
+		<a href="home/advFunc">Advanced Function</a>
 
 	</div>
 
