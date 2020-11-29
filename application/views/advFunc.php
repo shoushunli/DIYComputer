@@ -178,6 +178,8 @@
       console.log(budget);
       if(budget != "" && emptyCate.length == 0) {
         $.ajax({
+          // url to receive the preferences user selected
+          // replace the url below
           url: "advFuncCon/xxx",
           data: {
 
@@ -238,6 +240,7 @@
             if(con) {
               alert(i + "-th config saveded !");
               $.ajax({
+                // url : to receive Index
                 url: "",
                 data: {
                   index:i
@@ -335,6 +338,8 @@
 
   function mongoRequest() {
     $.ajax({
+      // url to request MongoDB
+      // replace the url below
       url: "advFuncCon/xxx",
       success: function(data) {
         console.log("config send to MongoDB sucessfully");
