@@ -26,62 +26,62 @@
     <div class="dropdown">
       <a id = "cpuDropbtn" class="dropbtn" onclick="toggle('cpuDrop')">Choose your need on CPU (computing/processing ability): <i class="fa fa-caret-right"></i></a>
       <div id="cpuDrop" class="dropdown-content">
-        <a onclick = "setCate('cpu', 'light', this)"> Light usage (office use, family entertainment, no or light gaming (LOL, etc)) </a>
-        <a onclick = "setCate('cpu', 'medium', this)"> Medium usage (medium gaming (1080 p), light development/video editing) </a>
-        <a onclick = "setCate('cpu', 'heavy', this)"> Heavy usage (2K gaming, heavy development use, data processing, video editing) </a>
-        <a onclick = "setCate('cpu', 'extreme', this)"> Extreme usage (4K gaming, big data processing, machine learning, 4K video editing/rendering) </a>
+        <a onclick = "setCate('cpu', 'light', 'Light Usage', this)"> Light usage (office use, family entertainment, no or light gaming (LOL, etc)) </a>
+        <a onclick = "setCate('cpu', 'medium', 'Medium Usage', this)"> Medium usage (medium gaming (1080 p), light development/video editing) </a>
+        <a onclick = "setCate('cpu', 'heavy', 'Heavy Usage', this)"> Heavy usage (2K gaming, heavy development use, data processing, video editing) </a>
+        <a onclick = "setCate('cpu', 'extreme', 'Extreme Usage', this)"> Extreme usage (4K gaming, big data processing, machine learning, 4K video editing/rendering) </a>
       </div>
     </div>
     <div class="dropdown">
       <a id = "gpuDropbtn" class="dropbtn" onclick="toggle('gpuDrop')">Choose your need on graphic card (gaming/video processing/rendering ability): <i class="fa fa-caret-right"></i></a>
       <div id="gpuDrop" class="dropdown-content">
-        <a onclick = "setCate('gpu', 'mini', this)"> Do I need this stuff? (office use, family entertainment, no gaming) </a>
-        <a onclick = "setCate('gpu', 'light', this)"> Light usage (office use, family entertainment, light gaming (LOL, etc)) </a>
-        <a onclick = "setCate('gpu', 'medium', this)"> Medium usage (medium gaming (1080 p/60 Hz), light video editing) </a>
-        <a onclick = "setCate('gpu', 'heavy', this)"> Heavy usage (heavy gaming (2K 60 Hz/1080 p 144 Hz), video editing/rendering) </a>
-        <a onclick = "setCate('gpu', 'extreme', this)"> Extreme usage (4K gaming, 4K video editing/rendering, big data/deep learning etc) </a>
+        <a onclick = "setCate('gpu', 'mini', 'null', this)"> Do I need this stuff? (office use, family entertainment, no gaming) </a>
+        <a onclick = "setCate('gpu', 'light', 'Light Usage ', this)"> Light usage (office use, family entertainment, light gaming (LOL, etc)) </a>
+        <a onclick = "setCate('gpu', 'medium', 'Medium Usage', this)"> Medium usage (medium gaming (1080 p/60 Hz), light video editing) </a>
+        <a onclick = "setCate('gpu', 'heavy', 'Heavy Usage', this)"> Heavy usage (heavy gaming (2K 60 Hz/1080 p 144 Hz), video editing/rendering) </a>
+        <a onclick = "setCate('gpu', 'extreme', 'Extreme Usage', this)"> Extreme usage (4K gaming, 4K video editing/rendering, big data/deep learning etc) </a>
       </div>
     </div>
     <div class="dropdown">
       <a id = "memoryDropbtn" class="dropbtn" onclick="toggle('memoryDrop')">Choose your need on memory (high-load design/modelling/rendering): <i class="fa fa-caret-right"></i></a>
       <div id="memoryDrop" class="dropdown-content">
-        <a onclick = "setCate('memory', 'small', this)"> Do I need that extra memory stuff? (16GB = 8GB x 2, recommended for general usage)</a>
-        <a onclick = "setCate('memory', 'large', this)"> I do have large-memory need (32GB = 16GB x 2)</a>
+        <a onclick = "setCate('memory', 'small', 'By Recommending', this)"> Do I need that extra memory stuff? (16GB = 8GB x 2, recommended for general usage)</a>
+        <a onclick = "setCate('memory', 'large', 'Extra', this)"> I do have large-memory need (32GB = 16GB x 2)</a>
       </div>
     </div>
     <div class="dropdown">
       <a id = "powerDropbtn" class="dropbtn" onclick="toggle('powerDrop')">Choose your need on Power Supply(high-load design/modelling/rendering): <i class="fa fa-caret-right"></i></a>
       <div id="powerDrop" class="dropdown-content">
-        <a onclick = "setCate('power', '0', this)"> Use our estimation</a>
-        <a onclick = "setCate('power', '450', this)"> 450 W</a>
-        <a onclick = "setCate('power', '500', this)"> 500 W</a>
-        <a onclick = "setCate('power', '550', this)"> 550 W</a>
-        <a onclick = "setCate('power', '600', this)"> 600 W</a>
-        <a onclick = "setCate('power', '650', this)"> 650 W</a>
-        <a onclick = "setCate('power', '750', this)"> 750 W</a>
+        <a onclick = "setCate('power', '0', 'By Recommending', this)"> Use our estimation</a>
+        <a onclick = "setCate('power', '450', '450 W', this)"> 450 W</a>
+        <a onclick = "setCate('power', '500', '500 W', this)"> 500 W</a>
+        <a onclick = "setCate('power', '550', '550 W', this)"> 550 W</a>
+        <a onclick = "setCate('power', '600', '600 W', this)"> 600 W</a>
+        <a onclick = "setCate('power', '650', '650 W', this)"> 650 W</a>
+        <a onclick = "setCate('power', '750', '750 W', this)"> 750 W</a>
       </div>
     </div>
     <div class="dropdown">
       <a id = "pccAndMotherboardDropbtn" class="dropbtn" onclick="toggle('pccAndMotherboardDrop')">Choose your need on PC case and Motherboard(size/form factor of your PC): <i class="fa fa-caret-right"></i></a>
       <div id="pccAndMotherboardDrop" class="dropdown-content">
-        <a onclick = "setCate('pccAndMotherboard', 'one', this)"> I have no idea, give me all size choices</a>
-        <a onclick = "setCate('pccAndMotherboard', 'two', this)"> I hate huge cases, give me smallest ones</a>
-        <a onclick = "setCate('pccAndMotherboard', 'three', this)"> I might need extra space for better cooling and adding more hardware later </a>
+        <a onclick = "setCate('pccAndMotherboard', 'one', 'By Recommending', this)"> I have no idea, give me all size choices</a>
+        <a onclick = "setCate('pccAndMotherboard', 'two', 'Small Size', this)"> I hate huge cases, give me smallest ones</a>
+        <a onclick = "setCate('pccAndMotherboard', 'three', 'Large Size', this)"> I might need extra space for better cooling and adding more hardware later </a>
       </div>
     </div>
     <div class="dropdown">
-      <a id = "ssdDropbtn" class="dropbtn" onclick="toggle('ssdDrop')">Choose your need on HDD and SSD(storage ability): <i class="fa fa-caret-right"></i></a>
+      <a id = "ssdDropbtn" class="dropbtn" onclick="toggle('ssdDrop')">Choose your need on SSD: <i class="fa fa-caret-right"></i></a>
       <div id="ssdDrop" class="dropdown-content">
-        <a onclick = "setCate('ssd', 'one', this)"> What should I know about this? (office use, family entertainment)</a>
-        <a onclick = "setCate('ssd', 'two', this)"> I need absolutely fastest speeds for my applications (heavy disk I/O jobs)</a>
+        <a onclick = "setCate('ssd', 'one', 'By Recommending', this)"> What should I know about this? (office use, family entertainment)</a>
+        <a onclick = "setCate('ssd', 'two', 'Fast', this)"> I need absolutely fastest speeds for my applications (heavy disk I/O jobs)</a>
       </div>
     </div>
     <div class="dropdown">
-      <a id = "hddDropbtn" class="dropbtn" onclick="toggle('hddDrop')">Choose your need on HDD and SSD(storage ability): <i class="fa fa-caret-right"></i></a>
+      <a id = "hddDropbtn" class="dropbtn" onclick="toggle('hddDrop')">Choose your need on HDD: <i class="fa fa-caret-right"></i></a>
       <div id="hddDrop" class="dropdown-content">
-        <a onclick = "setCate('hdd', 'one', this)"> Why do I need this? (office use, family entertainment)</a>
-        <a onclick = "setCate('hdd', 'two', this)"> I need 1TB extra space storage for my movie/game collections </a>
-        <a onclick = "setCate('hdd', 'three', this)"> I need 2TB extra space storage for my movie/game collections </a>
+        <a onclick = "setCate('hdd', 'one', 'By Recommending', this)"> Why do I need this? (office use, family entertainment)</a>
+        <a onclick = "setCate('hdd', 'two', '1TB', this)"> I need 1TB extra space storage for my movie/game collections </a>
+        <a onclick = "setCate('hdd', 'three', '2TB', this)"> I need 2TB extra space storage for my movie/game collections </a>
       </div>
     </div>
 
@@ -143,10 +143,12 @@
     var tog = undefined;
     // store budget, value from budgetRecord()
     var budget = 0;
+
     // a dictionay of array stores the values and element of the selected option
     // with the corrresponding category.
     // cates[CPU] = [<a>, Low] @1 the element @2 the value
     var cates = {"cpu":false, "gpu":false,"memory":false, "power":false,"pccAndMotherboard":false, "ssd":false, "hdd":false};
+
     // regist which price tag hass been open => for easy close
     // closeTable()
     var priceTag = [];
@@ -175,12 +177,21 @@
           alert("Please select all the preferences.");
         }
       // all good
-      console.log(budget);
-      if(budget != "" && emptyCate.length == 0) {
+      if((budget != "" && emptyCate.length == 0)) {
+
+        var table = document.getElementById("t01")
+
+        var len = table.rows.length
+        for (i = 1; i < len; i++) {
+            document.getElementById("t01").deleteRow(1);
+        }
+        console.log("Request below:");
+        console.log(cates);
         $.ajax({
           // url to receive the preferences user selected
           // replace the url below
           url: "http://localhost:8080/DIYComputer/computerServlet",
+          //url: "advFuncCon/xxx",
           data: {
 
               maximum:budget,
@@ -198,17 +209,24 @@
             // return all the skus of this category and parse them into $parsedData
             var parsedData = JSON.parse(data);
             // for each parsedData, extract each category inside it
-            console.log(parsedData[0]);
+            if(parsedData == null) {
+              alert("No config found...")
+            } else {
+              tableInsert(parsedData, "t01", true);
+              // show the result as a table
+              openTable('tab');
+            }
 
-            tableInsert(parsedData, "t01", true);
           }
         });
-        // show the result as a table
-        openTable('tab');
       }
+
     }
 
+
     function tableInsert(parsedData, tableId, insertSelect) {
+      console.log("Parsed below:");
+      console.log(parsedData);
       parsedData.forEach((item, i) => {
         // for each parsedData create a new row
         var row = document.getElementById(tableId).insertRow();
@@ -321,12 +339,21 @@
     //register the selected option, and remain selected mark for this option
     //@param cate: the corrresponding category of this option
     //@param value: the value of this option
+    //@param test: the text will display on the button as a remainder.
     //@param opt: the corrresponding element of this option
-    function setCate(cate, value, opt) {
+
+    function setCate(cate, value, text, opt) {
+      t = document.createElement('span');
+      t.style.color = "steelblue";
+      t.innerHTML = " " + text;
+      var btn = document.getElementById(cate + "Dropbtn");
       // check if the corrresponding category has already had a selected option
       if(cates[cate] != false) {
         // if so, remove the selection of the older option
         cates[cate][0].style.border = "none";
+        btn.replaceChild(t, btn.childNodes[2]);
+      } else {
+        btn.appendChild(t);
       }
       // select this option by adding green border to its corrresponding element
       opt.style.border = "2px solid #4CAF50";
@@ -334,7 +361,9 @@
       temp = [opt, value];
       cates[cate] = temp;
       // remove the glow effect if has
-      document.getElementById(cate + "Dropbtn").classList.remove("arrow_box");
+      btn.classList.remove("arrow_box");
+
+
     }
 
   function mongoRequest() {
