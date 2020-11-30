@@ -54,7 +54,7 @@
 
   <script>
     if ( <?php echo $rows; ?> == 2) {
-      alert("添加成功！");
+      alert("Insert successfully!");
     } else {
       alert("添加失败！");
     }

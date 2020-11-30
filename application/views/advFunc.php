@@ -260,9 +260,10 @@
               alert(i + "-th config saveded !");
               $.ajax({
                 // url : to receive Index
-                url: "",
+                url: "http://localhost:8080/DIYComputer/computerServlet",
                 data: {
-                  index:i
+                    index:i,
+                    action:"save"
                 },
                 success: function(data) {
                   console.log("config send to MongoDB sucessfully");
@@ -370,7 +371,10 @@
     $.ajax({
       // url to request MongoDB
       // replace the url below
-      url: "advFuncCon/xxx",
+      url: "http://localhost:8080/DIYComputer/computerServlet",
+        data:{
+          action:"showCollection"
+        },
       success: function(data) {
         console.log("config send to MongoDB sucessfully");
         var parsedData = JSON.parse(data);
