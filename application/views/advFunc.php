@@ -118,7 +118,7 @@
 
 <div class="table-popup" id="mongotab">
   <button class="closebtn" onclick="closeTable('mongotab', 't02')"></button>
-  <span style="font-size: 20px; color:white;">My Collection</span>
+  <span style="font-size: 20px; color:#4F5155;">My Collection</span>
   <span style="float:right; color:white;">Powered by MongoDB</span>
   <table class="table-container" id = "t02">
     <tr>
@@ -290,12 +290,13 @@
 
           if(i == parsedData.length-1 && saveClicked) {
             row.classList.add("arrow_row");
+            saveClicked = false;
           }
 
           b.onclick = function() {
             con = confirm("Do you want to delete this configuration? Data can't be retrieved.")
             if(con) {
-              alert(i + "Config deleted!");
+              document.getElementById(tableId).deleteRow(i+1);
               $.ajax({
                 // url : to receive Index
                 // replace url below to delete
@@ -306,6 +307,7 @@
                 },
                 success: function(data) {
                   console.log("Config deleted from MongoDB successfully");
+                  alert((i+1) + "Config deleted!");
                 }
               });
             }
