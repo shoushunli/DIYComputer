@@ -96,7 +96,7 @@
 
   <div class="table-popup" id="tab">
     <div>
-      <button class="closebtn" onmousemove="showX()" onmouseout="hideX()" onclick="closeTable('tab')"><i class="fa fa-close" id = "X" style="opacity:0;"></i></button>
+      <button class="closebtn" onmousemove="showX()" onmouseout="hideX()" onclick="closeTable('tab', 't01')"><i class="fa fa-close" id = "X" style="opacity:0;"></i></button>
     </div>
     <table class="table-container" id="t01">
       <tr>
@@ -109,7 +109,7 @@
         <th>PCCase</th>
         <th>PowerSupply</th>
         <th style="background:orange">Total Price</th>
-        <th style="background:steelblue">Check</th>
+        <th style="background:steelblue">Save</th>
       </tr>
     </table>
 </div>
@@ -117,7 +117,8 @@
 
 
 <div class="table-popup" id="mongotab">
-  <button class="closebtn" onclick="closeTable('mongotab')"></button>
+  <button class="closebtn" onclick="closeTable('mongotab', 't02')"></button>
+  <span style="font-size: 20px; color:white;">My Collection</span>
   <span style="float:right; color:white;">Powered by MongoDB</span>
   <table class="table-container" id = "t02">
     <tr>
@@ -130,6 +131,7 @@
       <th>PCCase</th>
       <th>PowerSupply</th>
       <th>Total Price</th>
+      <th style="background:#ddd;">Delete</th>
     </tr>
   </table>
 </div>
@@ -144,6 +146,7 @@
     // store budget, value from budgetRecord()
     var budget = 0;
 
+    var saveClicked = false;
     // a dictionay of array stores the values and element of the selected option
     // with the corrresponding category.
     // cates[CPU] = [<a>, Low] @1 the element @2 the value
@@ -157,7 +160,8 @@
     var header = ["cpu","gpu", "memory", "motherboard", "ssd", "hdd", "pcCase", "power", "price"];
     var price = 0;
 
-
+    // fetch the result from the backend
+    // also calls tableInsert to show the result.
     function result() {
       // store the uninitialized category into $emptyCate
       emptyCate = Object.keys(cates).filter(key => cates[key] === false)
@@ -178,13 +182,6 @@
         }
       // all good
       if((budget != "" && emptyCate.length == 0)) {
-
-        var table = document.getElementById("t01")
-
-        var len = table.rows.length
-        for (i = 1; i < len; i++) {
-            document.getElementById("t01").deleteRow(1);
-        }
         console.log("Request below:");
         console.log(cates);
         $.ajax({
@@ -223,8 +220,23 @@
 
     }
 
-
-    function tableInsert(parsedData, tableId, insertSelect) {
+    //@param tableId: the table shows which table will be reseted.
+    function tableReset(tableId) {
+      var table = document.getElementById(tableId);
+      var len = table.rows.length;
+      for (i = 1; i < len; i++) {
+          table.deleteRow(1);
+      }
+      if(table.rows.length == 1) {
+        console.log("Table reset successfully");
+      } else {
+        console.log("Table reset failed");
+      }
+    }
+    //@param parsedData: the parsedData fetched from the backend,
+    //@param tableId: the table that the data will be inserted into,
+    //@param submit_bool: boolean, if this table if for submit,
+    function tableInsert(parsedData, tableId, submit_bool) {
       console.log("Parsed below:");
       console.log(parsedData);
       parsedData.forEach((item, i) => {
@@ -252,12 +264,11 @@
         // insert the total price.
         row.insertCell(header.length-1).innerHTML = "$" + item['price'];
         // insert the select button which send index to the backend for MongoDB storing
-        if(insertSelect) {
-          b = document.createElement('button');
+        b = document.createElement('button');
+        if(submit_bool) {
           b.onclick = function() {
             con = confirm("Do you want to save your configuration to imporve our analysis?")
             if(con) {
-              alert(i + "-th config saveded !");
               $.ajax({
                 // url : to receive Index
                 url: "http://localhost:8080/DIYComputer/computerServlet",
@@ -267,11 +278,40 @@
                 },
                 success: function(data) {
                   console.log("config send to MongoDB sucessfully");
+                  alert(i + "-th config saveded !");
+                  saveClicked = true;
                 }
               });
             }
           }
           b.innerHTML = "save";
+          row.insertCell(header.length).appendChild(b);
+        } else {
+
+          if(i == parsedData.length-1 && saveClicked) {
+            row.classList.add("arrow_row");
+          }
+
+          b.onclick = function() {
+            con = confirm("Do you want to delete this configuration? Data can't be retrieved.")
+            if(con) {
+              alert(i + "Config deleted!");
+              $.ajax({
+                // url : to receive Index
+                // replace url below to delete
+                url: "",
+                data: {
+                    index:i,
+                    action:"delete"
+                },
+                success: function(data) {
+                  console.log("Config deleted from MongoDB successfully");
+                }
+              });
+            }
+          }
+
+          b.innerHTML = "delete";
           row.insertCell(header.length).appendChild(b);
         }
       });
@@ -302,13 +342,15 @@
 
     }
     // show the table, and blur the background
-    function openTable(id) {
-      document.getElementById(id).style.display = "block";
+    // @param conatinerId, the container that holds the table to be opened.
+    function openTable(conatinerId) {
+      document.getElementById(conatinerId).style.display = "block";
       document.getElementById("container").classList.add("blur");
     }
     // close the table, and normalize the background
-    function closeTable(id) {
-      document.getElementById(id).style.display = "none";
+    function closeTable(conatinerId, tableId) {
+      tableReset(tableId);
+      document.getElementById(conatinerId).style.display = "none";
       document.getElementById("container").classList.remove("blur");
       // close the open price tag
       priceTag.forEach((item, i) => {
@@ -371,7 +413,8 @@
     $.ajax({
       // url to request MongoDB
       // replace the url below
-      url: "http://localhost:8080/DIYComputer/computerServlet",
+      //url: "http://localhost:8080/DIYComputer/computerServlet",
+      url:"advFuncCon/xxx",
         data:{
           action:"showCollection"
         },
@@ -382,7 +425,6 @@
       }
     });
     openTable('mongotab');
-
   }
   </script>
 
