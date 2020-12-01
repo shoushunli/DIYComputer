@@ -13,10 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="modify the advFunc.php">
+    <list default="true" id="5c90c91a-6f94-472e-8bd3-33cb63a84d57" name="Default Changelist" comment="finish show collections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/advFunc.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/advFunc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/cpuInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cpuInsert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,8 @@
       <workItem from="1604739534931" duration="3379000" />
       <workItem from="1606293884057" duration="7053000" />
       <workItem from="1606647418349" duration="3130000" />
-      <workItem from="1606656785205" duration="3259000" />
+      <workItem from="1606656785205" duration="3353000" />
+      <workItem from="1606750702022" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="Server Setup">
       <created>1603708314179</created>
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606651257870</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="finish show collections">
+      <created>1606744424789</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606744424789</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +178,8 @@
     <MESSAGE value="implement complex query" />
     <MESSAGE value="modify the cpuinsert.php" />
     <MESSAGE value="modify the advFunc.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify the advFunc.php" />
+    <MESSAGE value="finish show collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish show collections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1108" y="170" key="#PHP" timestamp="1604349926255">
@@ -209,8 +217,8 @@
     </state>
     <state x="791" y="153" key="SettingsEditor/0.23.1920.995@0.23.1920.995" timestamp="1603708110003" />
     <state x="750" y="140" width="1081" height="728" key="SettingsEditor/0.25.1920.973@0.25.1920.973" timestamp="1606302311094" />
-    <state x="609" y="275" key="Vcs.Push.Dialog.v2" timestamp="1606651262477">
-      <screen x="0" y="25" width="1920" height="982" />
+    <state x="609" y="276" key="Vcs.Push.Dialog.v2" timestamp="1606744436641">
+      <screen x="0" y="25" width="1920" height="984" />
     </state>
     <state x="609" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604364212024" />
     <state x="609" y="278" key="Vcs.Push.Dialog.v2/0.23.1920.1002@0.23.1920.1002" timestamp="1604372296949" />
@@ -220,14 +228,16 @@
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.996@0.23.1920.996" timestamp="1604365038930" />
     <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1603712647181" />
     <state x="609" y="275" key="Vcs.Push.Dialog.v2/0.25.1920.982@0.25.1920.982" timestamp="1606651262477" />
-    <state x="675" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606738489491">
-      <screen x="0" y="25" width="1920" height="984" />
+    <state x="609" y="276" key="Vcs.Push.Dialog.v2/0.25.1920.984@0.25.1920.984" timestamp="1606744436641" />
+    <state x="675" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606751990237">
+      <screen x="0" y="25" width="1920" height="987" />
     </state>
     <state x="675" y="428" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.970@0.25.1920.970" timestamp="1606293894938" />
     <state x="675" y="428" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.971@0.25.1920.971" timestamp="1606294601636" />
     <state x="675" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.973@0.25.1920.973" timestamp="1606294213265" />
     <state x="675" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.981@0.25.1920.981" timestamp="1606647437750" />
     <state x="675" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.984@0.25.1920.984" timestamp="1606738489491" />
+    <state x="675" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.987@0.25.1920.987" timestamp="1606751990237" />
     <state x="501" y="221" width="700" height="530" key="recent.locations.popup" timestamp="1606647784677">
       <screen x="0" y="25" width="1920" height="984" />
     </state>

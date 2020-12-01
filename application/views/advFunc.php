@@ -300,7 +300,7 @@
               $.ajax({
                 // url : to receive Index
                 // replace url below to delete
-                url: "",
+                url: "http://localhost:8080/DIYComputer/computerServlet",
                 data: {
                     index:i,
                     action:"delete"
@@ -416,7 +416,7 @@
       // url to request MongoDB
       // replace the url below
       //url: "http://localhost:8080/DIYComputer/computerServlet",
-      url:"advFuncCon/xxx",
+      url:"http://localhost:8080/DIYComputer/computerServlet",
         data:{
           action:"showCollection"
         },
